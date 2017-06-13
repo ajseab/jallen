@@ -1,0 +1,356 @@
+/*
+Project name: Joseph Allen's Website
+Author: Avery Seabolt
+*/
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+// VARIABLES
+/////////////////////////////////////////////////////////////////////////////////////
+$font-stack: "Raleway", "Arial", sans-serif;
+$primary-color: #c0b283;
+$primary-color-dark: #93824a;
+$footer-background-color: #444;
+$facebook-color: #3b5998;
+$instagram-color: #405de6;
+
+/////////////////////////////////////////////////////////////////////////////////////
+// BASIC SETUP
+/////////////////////////////////////////////////////////////////////////////////////
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: $font-stack;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+section {
+    padding: 105px 0px;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+// REUSABLE
+/////////////////////////////////////////////////////////////////////////////////////
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.animate {
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+// HEADINGS
+/////////////////////////////////////////////////////////////////////////////////////
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    float: left;
+    font-weight: 100;
+    font-size: 225%; // 225 orig
+    font-weight: 100;
+    margin-top: 40px; // 37 originally
+    letter-spacing: 3px;
+    color: #fff;
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+h2 {
+    float: left;
+    font-weight: 100;
+    font-size: 200%;
+    border-left: 1px solid $primary-color;
+    padding-left: 15px;
+}
+
+h3 {
+    font-weight: 300 !important;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    font-size: 105%;
+    color: $primary-color-dark;
+    border-bottom: 1px solid #eee;
+}
+
+h4 {
+    font-weight: 300;
+    padding: 18px 0px 0px 18px; 
+    text-align: center;
+    &:after {
+        display: block;
+        height: 1px;
+        background-color: $primary-color;
+        content: " ";
+        width: 35px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+// HEADER
+/////////////////////////////////////////////////////////////////////////////////////
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(img/img-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+// PARAGRAPHS
+/////////////////////////////////////////////////////////////////////////////////////
+p {
+    line-height: 170%;
+    font-size: 75%; // 78
+    color: #666;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+// NAVIGATION
+/////////////////////////////////////////////////////////////////////////////////////
+// Main Navigation
+.main-nav {
+    margin-top: 57px; // 54 originally
+    list-style: none;
+    float: right;
+    li {
+        margin-left: 38px;
+        display: inline-block;
+        a:link,
+        a:visited {
+            padding: 8px 0px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 85%;
+            color: #fff;
+            transition: color 0.2s;
+        }
+        a:hover,
+        a:active {
+            color: $primary-color;
+        }
+    }
+}
+
+.scroll-to-content {
+    cursor: pointer;
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    margin-left: -15px;
+    width: 49px;
+    height: 49px;
+    z-index: 10;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: background-color 0.2s;
+    &:hover,
+    &:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    }
+    i {
+        font-size: 175%;
+        color: #000;
+        opacity: 1;
+    }
+    
+}
+
+.nav-current {
+    border-bottom: 1px solid $primary-color;
+    color: $primary-color !important;
+}
+
+// Mobile Navigation
+
+/////////////////////////////////////////////////////////////////////////////////////
+// GEAR SECTION
+/////////////////////////////////////////////////////////////////////////////////////
+.gear-tabs {
+    list-style: none;
+    float: right;
+    li {
+        margin-left: 2px;
+        display: inline-block;
+        cursor: pointer;
+        background-color: #f6f6f6;
+        padding: 25px 30px 25px 30px;
+        text-decoration: none;
+        font-size: 55%;
+        font-weight: 400;
+        text-transform: uppercase;
+        transition: background-color 0.2s;
+        &:hover,
+        &:active {
+            background-color: #e5e5e5;
+        }
+    }
+    .current {
+        background-color: #d4d4d4 !important;
+        color: #444 !important;
+    }
+}
+
+.tab-container {
+    padding-top: 40px;
+    .current {
+        display: inherit;
+    }
+}
+
+.tab-content {
+    display: none;
+}
+
+/////////////////////////////////////////
+// The Board
+#tab-board h3 {
+    margin-bottom: 25px;
+}
+
+.pedalboard {
+    height: 350px;
+    width: auto;
+}
+
+.pedals {
+    margin-top: 45px;
+}
+
+.pedal-container {
+    padding: 20px;
+    h3 {
+        a {
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: inherit;
+                transition: color 0.2s;
+            }
+            &:hover,
+            &:active {
+                color: #222;
+            }
+        }
+    }
+}
+
+/////////////////////////////////////////
+// Guitars
+#tab-guitars div:first-child h3 {
+    font-size: 115%;
+    float: none;
+    text-align: center;
+}
+
+.guitars {
+    margin-top: 50px;  
+    margin-bottom: 50px;
+    .guitar-img {
+        height: 475px;
+        width: auto;
+    }
+    p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 15px 18px 18px 18px;
+    }
+}
+
+/////////////////////////////////////////
+// Amp
+.jackson {
+    height: 350px;
+    width: auto;
+}
+
+#tab-amp h3 {
+    margin-bottom: 25px;
+}
+
+/////////////////////////////////////////
+// More
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+// FOOTER
+/////////////////////////////////////////////////////////////////////////////////////
+footer {
+    display: block;
+    background-color: $footer-background-color;
+    padding: 50px;
+    p {
+        color: #888;
+        text-align: center;
+        font-size: 65%;
+        margin-top: 50px;
+    }
+}
+
+.social-links {
+    text-align: center;
+    list-style: none;
+    li {
+        display: inline-block;
+        margin: auto 30px;
+        a:link,
+        a:visited {
+            color: $primary-color; // #888
+            text-decoration: none;
+            font-size: 175%;
+        }
+    }
+}
+
+.ion-social-facebook,
+.ion-social-instagram-outline {
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: $facebook-color;
+}
+
+.ion-social-instagram-outline:hover {
+    color: $instagram-color;
+}
+
