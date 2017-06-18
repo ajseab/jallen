@@ -1,1 +1,318 @@
-*{margin:0;padding:0;box-sizing:border-box}html,body{background-color:#fff;color:#555;font-family:"Raleway","Arial",sans-serif;font-weight:300;font-size:20px;text-rendering:optimizeLegibility;overflow-x:hidden}.clearfix{zoom:1}.clearfix:after{content:'.';clear:both;display:block;height:0;visibility:hidden}section{padding:105px 0px}.row{max-width:1140px;margin:0 auto}.animate{animation-duration:.5s;animation-fill-mode:both}h1,h2,h3{text-transform:uppercase}h1{float:left;font-weight:100;font-size:225%;font-weight:100;margin-top:40px;letter-spacing:3px;color:#fff}h1 a:link,h1 a:visited{text-decoration:none;color:#fff}h2{float:left;font-weight:100;font-size:200%;border-left:2px solid #c0b283;padding-left:15px}h3{font-weight:300 !important;text-transform:uppercase;padding-bottom:12px;font-size:105%;color:#93824a;border-bottom:1px solid #eee}h4{font-weight:400;font-size:18px;text-align:center;padding-top:12px}h4:after{display:block;height:1px;background-color:#c0b283;content:" ";width:35px;margin:0 auto;margin-top:10px}header{background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)),url(img/img-1.jpg);background-size:cover;background-position:center;height:100vh;background-attachment:fixed}p{line-height:165%;font-size:16px;color:#444}.main-nav{margin-top:57px;list-style:none;float:right}.main-nav li{margin-left:38px;display:inline-block}.main-nav li a:link,.main-nav li a:visited{padding:8px 0px;text-decoration:none;text-transform:uppercase;font-size:85%;color:#fff;transition:color 0.2s}.main-nav li a:hover,.main-nav li a:active{color:#c0b283}.scroll-to-content{cursor:pointer;position:absolute;bottom:55px;left:50%;margin-left:-21px;width:49px;height:49px;z-index:10;text-align:center;padding-top:5px;box-sizing:border-box;display:inline-block;border-radius:50%;background-color:rgba(255,255,255,0.15);transition:background-color 0.2s}.scroll-to-content:hover,.scroll-to-content:active{background-color:rgba(255,255,255,0.1)}.scroll-to-content i{font-size:175%;color:#000;opacity:1}.nav-current{border-bottom:1px solid #c0b283;color:#c0b283 !important}.gear-tabs{list-style:none;float:right}.gear-tabs li{margin-left:2px;display:inline-block;cursor:pointer;background-color:#f6f6f6;padding:25px 30px 25px 30px;text-decoration:none;font-size:55%;font-weight:400;text-transform:uppercase;transition:background-color 0.2s}.gear-tabs li:hover,.gear-tabs li:active{background-color:#e5e5e5}.gear-tabs .current{background-color:#d4d4d4 !important;color:#444 !important}.tab-container{padding-top:40px}.tab-container .current{display:inherit}.tab-content{display:none}#tab-board h3{margin-bottom:25px}.pedalboard{height:350px;width:auto}.pedals{margin-top:45px}.pedal-container{padding:20px}.pedal-container h3 a:link,.pedal-container h3 a:visited{text-decoration:none;color:inherit;transition:color 0.2s}.pedal-container h3 a:hover,.pedal-container h3 a:active{color:#222}#tab-guitars div:first-child h3{font-size:115%;float:none;text-align:center;margin-bottom:35px}.guitars{text-align:center}.guitars .guitar-img{height:450px;width:auto}.guitars p{margin-bottom:70px;padding:10px 30px 0px 30px;text-align:left !important}.jackson{height:350px;width:auto}#tab-amp h3{margin-bottom:25px}footer{display:block;background-color:#444;padding:50px}footer p{color:#888;text-align:center;font-size:65%;margin-top:50px}.social-links{text-align:center;list-style:none}.social-links li{display:inline-block;margin:auto 30px}.social-links li a:link,.social-links li a:visited{color:#c0b283;text-decoration:none;font-size:175%}.ion-social-facebook,.ion-social-instagram-outline{transition:color 0.2s}.ion-social-facebook:hover{color:#3b5998}.ion-social-instagram-outline:hover{color:#405de6}
+/*
+Theme Name: Jallen
+Author: Avery Seabolt
+Description: For Joseph Allen's Website
+Version: 1.0
+Text Domain: jallen
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+section {
+  padding: 105px 0px;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.animate {
+  animation-duration: .5s;
+  animation-fill-mode: both;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  float: left;
+  font-weight: 100;
+  font-size: 225%;
+  font-weight: 100;
+  margin-top: 40px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+h1 a:link,
+h1 a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+h2 {
+  float: left;
+  font-weight: 100;
+  font-size: 200%;
+  border-left: 2px solid #c0b283;
+  padding-left: 15px;
+}
+
+h3 {
+  font-weight: 300 !important;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  font-size: 105%;
+  color: #93824a;
+  border-bottom: 1px solid #eee;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+h4:after {
+  display: block;
+  height: 1px;
+  background-color: #c0b283;
+  content: " ";
+  width: 35px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(img/img-1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+p {
+  line-height: 165%;
+  font-size: 16px;
+  color: #444;
+}
+
+.main-nav {
+  margin-top: 57px;
+  list-style: none;
+  float: right;
+}
+
+.main-nav li {
+  margin-left: 38px;
+  display: inline-block;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 85%;
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  color: #c0b283;
+}
+
+.scroll-to-content {
+  cursor: pointer;
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  margin-left: -21px;
+  width: 49px;
+  height: 49px;
+  z-index: 10;
+  text-align: center;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: background-color 0.2s;
+}
+
+.scroll-to-content:hover, .scroll-to-content:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.scroll-to-content i {
+  font-size: 175%;
+  color: #000;
+  opacity: 1;
+}
+
+.nav-current {
+  border-bottom: 1px solid #c0b283;
+  color: #c0b283 !important;
+}
+
+.gear-tabs {
+  list-style: none;
+  float: right;
+}
+
+.gear-tabs li {
+  margin-left: 2px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #f6f6f6;
+  padding: 25px 30px 25px 30px;
+  text-decoration: none;
+  font-size: 55%;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+}
+
+.gear-tabs li:hover, .gear-tabs li:active {
+  background-color: #e5e5e5;
+}
+
+.gear-tabs .current {
+  background-color: #d4d4d4 !important;
+  color: #444 !important;
+}
+
+.tab-container {
+  padding-top: 40px;
+}
+
+.tab-container .current {
+  display: inherit;
+}
+
+.tab-content {
+  display: none;
+}
+
+#tab-board h3 {
+  margin-bottom: 25px;
+}
+
+.pedalboard {
+  height: 350px;
+  width: auto;
+}
+
+.pedals {
+  margin-top: 45px;
+}
+
+.pedal-container {
+  padding: 20px;
+}
+
+.pedal-container h3 a:link, .pedal-container h3 a:visited {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.pedal-container h3 a:hover, .pedal-container h3 a:active {
+  color: #222;
+}
+
+#tab-guitars div:first-child h3 {
+  font-size: 115%;
+  float: none;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.guitars {
+  text-align: center;
+}
+
+.guitars .guitar-img {
+  height: 450px;
+  width: auto;
+}
+
+.guitars p {
+  margin-bottom: 70px;
+  padding: 10px 30px 0px 30px;
+  text-align: left !important;
+}
+
+.jackson {
+  height: 350px;
+  width: auto;
+}
+
+#tab-amp h3 {
+  margin-bottom: 25px;
+}
+
+footer {
+  display: block;
+  background-color: #444;
+  padding: 50px;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 65%;
+  margin-top: 50px;
+}
+
+.social-links {
+  text-align: center;
+  list-style: none;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: auto 30px;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  color: #c0b283;
+  text-decoration: none;
+  font-size: 175%;
+}
+
+.ion-social-facebook,
+.ion-social-instagram-outline {
+  transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+  color: #3b5998;
+}
+
+.ion-social-instagram-outline:hover {
+  color: #405de6;
+}
