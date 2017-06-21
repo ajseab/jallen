@@ -1,3 +1,4 @@
+// compileExpanded
 /*
 Theme Name: Jallen
 Author: Avery Seabolt
@@ -134,6 +135,19 @@ header {
     background-attachment: fixed;
 }
 
+.under-construction {
+    width: 100%;
+    height: auto;
+    background-color: #e74c3c;
+    text-align: center;
+    padding: 4px 0px 4px 0px;
+    p {
+        font-size: 65%;
+        color: #fefefe;
+        letter-spacing: 1px;
+    }
+}
+
 /////////////////////////////////////////////////////////////////////////////////////
 // PARAGRAPHS
 /////////////////////////////////////////////////////////////////////////////////////
@@ -195,7 +209,7 @@ p {
         color: #000;
         opacity: 1;
     }
-    
+
 }
 
 .nav-current {
@@ -357,4 +371,3 @@ footer {
 .ion-social-instagram-outline:hover {
     color: $instagram-color;
 }
-
