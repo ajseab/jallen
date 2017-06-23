@@ -13,7 +13,6 @@ Text Domain: jallen
 $font-stack: "Raleway", "Arial", sans-serif;
 $primary-color: #c0b283;
 $primary-color-dark: #93824a;
-$primary-color-light: #f9f8f4;
 $footer-background-color: #444;
 $facebook-color: #3b5998;
 $instagram-color: #405de6;
@@ -112,6 +111,16 @@ h4 {
     font-weight: 400;
     font-size: 18px;
     text-align: center;
+    padding-top: 12px;
+    &:after {
+        display: block;
+        height: 1px;
+        background-color: $primary-color;
+        content: " ";
+        width: 35px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -293,22 +302,14 @@ p {
 
 .guitars {
     text-align: center;
-    // padding: 10px;
     .guitar-img {
-        height: auto; // 425 px orig
-        width: 100%;
+        height: 450px; // 425 px orig
+        width: auto;
     }
     p {
         margin-bottom: 70px;
-        padding: 10px 20px 0px 20px;
+        padding: 10px 30px 0px 30px;
         text-align: left !important;
-    }
-    .guitar-label-box {
-        margin-top: -5px;
-        padding-top: 12px;
-        background-color: $primary-color-light;
-        border-bottom: 1px solid $primary-color;
-        padding-bottom: 10px;
     }
 }
 
